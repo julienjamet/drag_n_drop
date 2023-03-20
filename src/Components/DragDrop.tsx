@@ -1,10 +1,10 @@
-import { FC, useState } from "react";
-import { useDrop } from "react-dnd";
-import { PictureList } from "../Data";
-import { IPicture } from "../Interfaces";
-import Picture from "./Picture";
+import { FC, useState } from "react"
+import { useDrop } from "react-dnd"
+import { PictureList } from "../Data"
+import { IPicture } from "../Interfaces"
+import { Picture } from "./Picture"
 
-const DragDrop: FC = () => {
+export const DragDrop: FC = () => {
 
     const [board, setBoard] = useState<IPicture[]>([])
 
@@ -34,7 +34,5 @@ const DragDrop: FC = () => {
                 })}
             </div>
         </>
-    );
+    )
 }
-
-export default DragDrop

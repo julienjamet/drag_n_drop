@@ -1,10 +1,10 @@
 import { FC } from 'react'
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
-import DragDrop from './Components/DragDrop'
+import { DragDrop } from './Components/DragDrop'
 import './App.css'
 
-const App: FC = () => {
+export const App: FC = () => {
 
   return (
     <DndProvider backend={HTML5Backend}>
@@ -14,5 +14,3 @@ const App: FC = () => {
     </DndProvider>
   )
 }
-
-export default App
