@@ -12,6 +12,10 @@ img {
   margin: 5px;
 }
 
+img:hover {
+  cursor: grab;
+}
+
 .board {
   width: 300px;
   height: 500px;
